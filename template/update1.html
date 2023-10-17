@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Record</title>
+</head>
+<body>
+<form action="updaterecord/{{myhotel.id}}" method="post">
+        {% csrf_token %}
+        Item Name:<br>
+        <input name="item" value="{{myhotel.ItemName}}">
+        <br><br>
+        Price:<br>
+        <input name="price" value="{{myhotel.Price}}">
+        <br><br>
+        <input type="submit" value="update">
+    </form>
+</body>
+</html>

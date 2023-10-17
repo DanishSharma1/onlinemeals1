@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Record</title>
+    <style>
+
+    </style>
+</head>
+<center>
+<body>
+<form action="addrecord/" method="post">
+            {% csrf_token %}
+            Item Name:<br>
+            <input name="Item">
+            <br><br>
+            Price:<br>
+            <input name="Price">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+</body>
+</center>
+</html>

@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background :url({% static 'images/case-bg.gif' %}) no-repeat  ;
+            background-size : 1700px;
+            display: block;
+            margin-left: auto;
+            margin-right: 350px;
+            width: 70%;
+
+
+            }
+        .big{
+        color:green;
+        }
+        .low{
+        color:green;
+        }
+        .dg{
+        color:green;
+        }
+        .h1{
+        color: green;
+        }
+        .item{
+        color: green;
+        }
+        .price{
+        color: green;
+        }
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Food Menu </title>
+</head>
+<center>
+<body>
+<h1 class="h1">Food Menu</h1>
+<table border="1">
+    {% for x in myhotel %}
+
+    <tr class="table">
+        <td><a class="big" href="update/{{x.id}}">{{x.id}}</a></td>
+        <td class="item">{{x.ItemName}}</td>
+        <td class="price">{{x.Price}}</td>
+        <td><a href="" class="low">Order Now</a></td>
+        <td> <a class="low" href="delete/{{x.id}}">delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+    <p>
+        <a  class = "dg" href="hotel/">Add Menu</a>
+    </p>
+</center>
+</html>

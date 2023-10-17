@@ -1,0 +1,17 @@
+
+.big {
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(127, 122, 122);
+  -webkit-border-radius: 8px;
+  border-radius: 32px;
+}
+
