@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'onlinemeals'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_18D8173EA6F7424BB670A48B1B3F6E66 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F5AACB78763A441E962EE2F1B6199F01 }}
